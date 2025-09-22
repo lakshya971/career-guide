@@ -1,6 +1,9 @@
 // Use environment variable with Vite's import.meta.env or fallback to localhost
 const CHATBOT_API_URL = import.meta.env.VITE_CHATBOT_API_URL || 'http://localhost:5000';
 
+console.log('🔧 Chatbot API URL:', CHATBOT_API_URL);
+console.log('🔧 Environment variables:', import.meta.env);
+
 export interface ChatMessage {
   id: number;
   text: string;
