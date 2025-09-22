@@ -1,5 +1,5 @@
-// Use environment variable or fallback to localhost for development
-const CHATBOT_API_URL = process.env.REACT_APP_CHATBOT_API_URL || 'http://localhost:5000';
+// Use environment variable with Vite's import.meta.env or fallback to localhost
+const CHATBOT_API_URL = import.meta.env.VITE_CHATBOT_API_URL || 'http://localhost:5000';
 
 export interface ChatMessage {
   id: number;
@@ -22,6 +22,9 @@ export class ChatbotService {
 
   async sendMessage(message: string): Promise<string> {
     try {
+      console.log('Sending request to:', `${CHATBOT_API_URL}/get_response`);
+      console.log('Message:', message);
+      
       const response = await fetch(`${CHATBOT_API_URL}/get_response`, {
         method: 'POST',
         headers: {
@@ -30,23 +33,33 @@ export class ChatbotService {
         body: JSON.stringify({ message }),
       });
 
+      console.log('Response status:', response.status);
+      console.log('Response ok:', response.ok);
+
       if (!response.ok) {
-        throw new Error(`HTTP error! status: ${response.status}`);
+        const errorText = await response.text();
+        console.error('Error response:', errorText);
+        throw new Error(`HTTP error! status: ${response.status}, message: ${errorText}`);
       }
 
       const data = await response.json();
+      console.log('Response data:', data);
       
       if (data.error) {
         throw new Error(data.error);
       }
 
-      return data.response;
+      return data.response || "I didn't receive a proper response from the server.";
     } catch (error) {
       console.error('Error sending message to chatbot:', error);
       
       // Fallback response for when the backend is not available
       if (error instanceof TypeError && error.message.includes('fetch')) {
-        return "I'm currently offline. Please make sure the chatbot server is running on port 5000.";
+        return "I'm currently offline. The chatbot backend may be starting up, please try again in a moment.";
+      }
+      
+      if (error instanceof Error) {
+        return `Sorry, I encountered an error: ${error.message}`;
       }
       
       return "Sorry, I'm having trouble processing your request right now. Please try again.";
