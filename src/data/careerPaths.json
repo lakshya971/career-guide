@@ -1,0 +1,46 @@
+[
+  {
+    "stream": "SCIENCE",
+    "courses": [
+      {
+        "name": "B.Sc Physics",
+        "pathways": [
+          {
+            "category": "Higher Studies",
+            "options": ["M.Sc Physics", "B.Tech Engineering", "PhD Physics", "MBA"]
+          },
+          {
+            "category": "Career Tracks",
+            "options": ["Research Scientist", "Data Analyst", "Physics Teacher", "Space Scientist"]
+          },
+          {
+            "category": "Industries",
+            "options": ["Aerospace", "Electronics", "Research Institutions", "Education"]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "stream": "COMMERCE",
+    "courses": [
+      {
+        "name": "B.Com Accounting",
+        "pathways": [
+          {
+            "category": "Higher Studies",
+            "options": ["M.Com", "MBA Finance", "CA", "CS", "CMA"]
+          },
+          {
+            "category": "Career Tracks",
+            "options": ["Chartered Accountant", "Financial Analyst", "Investment Banker", "Tax Consultant"]
+          },
+          {
+            "category": "Industries",
+            "options": ["Banking", "Consulting", "Corporate Finance", "Government"]
+          }
+        ]
+      }
+    ]
+  }
+]

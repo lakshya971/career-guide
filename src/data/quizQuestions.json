@@ -1,0 +1,82 @@
+[
+  {
+    "id": 1,
+    "text": "Do you enjoy solving mathematical equations and working with numbers?",
+    "options": [
+      {"id": "a", "text": "Absolutely love it!", "weights": {"SCIENCE": 3, "COMMERCE": 2, "ARTS": 0, "VOCATIONAL": 1}},
+      {"id": "b", "text": "It's okay, I can manage", "weights": {"SCIENCE": 1, "COMMERCE": 1, "ARTS": 0, "VOCATIONAL": 1}},
+      {"id": "c", "text": "Not really my thing", "weights": {"SCIENCE": 0, "COMMERCE": 0, "ARTS": 2, "VOCATIONAL": 1}},
+      {"id": "d", "text": "I actively avoid math", "weights": {"SCIENCE": 0, "COMMERCE": 0, "ARTS": 3, "VOCATIONAL": 2}}
+    ]
+  },
+  {
+    "id": 2,
+    "text": "What type of activities do you find most engaging?",
+    "options": [
+      {"id": "a", "text": "Conducting experiments and research", "weights": {"SCIENCE": 3, "COMMERCE": 0, "ARTS": 1, "VOCATIONAL": 1}},
+      {"id": "b", "text": "Managing projects and people", "weights": {"SCIENCE": 1, "COMMERCE": 3, "ARTS": 2, "VOCATIONAL": 2}},
+      {"id": "c", "text": "Creative writing and artistic expression", "weights": {"SCIENCE": 0, "COMMERCE": 1, "ARTS": 3, "VOCATIONAL": 1}},
+      {"id": "d", "text": "Hands-on building and fixing things", "weights": {"SCIENCE": 1, "COMMERCE": 1, "ARTS": 1, "VOCATIONAL": 3}}
+    ]
+  },
+  {
+    "id": 3,
+    "text": "How do you prefer to solve problems?",
+    "options": [
+      {"id": "a", "text": "Through systematic analysis and data", "weights": {"SCIENCE": 3, "COMMERCE": 2, "ARTS": 1, "VOCATIONAL": 1}},
+      {"id": "b", "text": "By considering all stakeholders and outcomes", "weights": {"SCIENCE": 1, "COMMERCE": 3, "ARTS": 2, "VOCATIONAL": 1}},
+      {"id": "c", "text": "Through creative and innovative approaches", "weights": {"SCIENCE": 1, "COMMERCE": 1, "ARTS": 3, "VOCATIONAL": 2}},
+      {"id": "d", "text": "By getting hands-on and trying different solutions", "weights": {"SCIENCE": 2, "COMMERCE": 1, "ARTS": 1, "VOCATIONAL": 3}}
+    ]
+  },
+  {
+    "id": 4,
+    "text": "What kind of work environment appeals to you most?",
+    "options": [
+      {"id": "a", "text": "Laboratory or research facility", "weights": {"SCIENCE": 3, "COMMERCE": 0, "ARTS": 1, "VOCATIONAL": 1}},
+      {"id": "b", "text": "Corporate office or business setting", "weights": {"SCIENCE": 1, "COMMERCE": 3, "ARTS": 1, "VOCATIONAL": 1}},
+      {"id": "c", "text": "Studio, gallery, or creative space", "weights": {"SCIENCE": 0, "COMMERCE": 1, "ARTS": 3, "VOCATIONAL": 1}},
+      {"id": "d", "text": "Workshop, factory, or field work", "weights": {"SCIENCE": 1, "COMMERCE": 1, "ARTS": 1, "VOCATIONAL": 3}}
+    ]
+  },
+  {
+    "id": 5,
+    "text": "Which subjects do you find most interesting?",
+    "options": [
+      {"id": "a", "text": "Physics, Chemistry, Biology, Mathematics", "weights": {"SCIENCE": 3, "COMMERCE": 1, "ARTS": 0, "VOCATIONAL": 1}},
+      {"id": "b", "text": "Economics, Accountancy, Business Studies", "weights": {"SCIENCE": 1, "COMMERCE": 3, "ARTS": 1, "VOCATIONAL": 2}},
+      {"id": "c", "text": "Literature, History, Philosophy, Psychology", "weights": {"SCIENCE": 0, "COMMERCE": 1, "ARTS": 3, "VOCATIONAL": 1}},
+      {"id": "d", "text": "Computer Science, Engineering, Technical subjects", "weights": {"SCIENCE": 2, "COMMERCE": 2, "ARTS": 1, "VOCATIONAL": 3}}
+    ]
+  },
+  {
+    "id": 6,
+    "text": "What motivates you most in your future career?",
+    "options": [
+      {"id": "a", "text": "Making scientific discoveries and innovations", "weights": {"SCIENCE": 3, "COMMERCE": 1, "ARTS": 1, "VOCATIONAL": 1}},
+      {"id": "b", "text": "Financial success and business growth", "weights": {"SCIENCE": 1, "COMMERCE": 3, "ARTS": 1, "VOCATIONAL": 2}},
+      {"id": "c", "text": "Creative expression and cultural impact", "weights": {"SCIENCE": 0, "COMMERCE": 1, "ARTS": 3, "VOCATIONAL": 1}},
+      {"id": "d", "text": "Building practical solutions and helping others", "weights": {"SCIENCE": 2, "COMMERCE": 2, "ARTS": 2, "VOCATIONAL": 3}}
+    ]
+  },
+  {
+    "id": 7,
+    "text": "How do you handle stress and deadlines?",
+    "options": [
+      {"id": "a", "text": "I work methodically and systematically", "weights": {"SCIENCE": 3, "COMMERCE": 2, "ARTS": 1, "VOCATIONAL": 2}},
+      {"id": "b", "text": "I prioritize and delegate effectively", "weights": {"SCIENCE": 1, "COMMERCE": 3, "ARTS": 2, "VOCATIONAL": 2}},
+      {"id": "c", "text": "I find creative ways to manage my time", "weights": {"SCIENCE": 1, "COMMERCE": 1, "ARTS": 3, "VOCATIONAL": 1}},
+      {"id": "d", "text": "I work efficiently and focus on results", "weights": {"SCIENCE": 2, "COMMERCE": 2, "ARTS": 1, "VOCATIONAL": 3}}
+    ]
+  },
+  {
+    "id": 8,
+    "text": "What type of impact do you want to make on society?",
+    "options": [
+      {"id": "a", "text": "Advance human knowledge and technology", "weights": {"SCIENCE": 3, "COMMERCE": 1, "ARTS": 1, "VOCATIONAL": 2}},
+      {"id": "b", "text": "Create economic opportunities and prosperity", "weights": {"SCIENCE": 1, "COMMERCE": 3, "ARTS": 1, "VOCATIONAL": 2}},
+      {"id": "c", "text": "Inspire and enrich human culture", "weights": {"SCIENCE": 0, "COMMERCE": 1, "ARTS": 3, "VOCATIONAL": 1}},
+      {"id": "d", "text": "Solve practical problems and improve daily life", "weights": {"SCIENCE": 2, "COMMERCE": 2, "ARTS": 1, "VOCATIONAL": 3}}
+    ]
+  }
+]

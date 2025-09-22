@@ -1,0 +1,80 @@
+[
+  {
+    "id": 1,
+    "name": "B.Sc Physics",
+    "stream": "SCIENCE",
+    "duration": "3 years",
+    "description": "Study of matter, energy, and their interactions",
+    "higherStudies": ["M.Sc Physics", "B.Tech Engineering", "MBA"],
+    "entranceTests": ["IIT JEE", "NEET", "University Entrance"],
+    "jobRoles": ["Research Scientist", "Lab Technician", "Physics Teacher", "Data Analyst"],
+    "salaryRange": "₹3-8 LPA",
+    "employers": ["ISRO", "DRDO", "Universities", "Tech Companies"],
+    "skills": ["Analytical Thinking", "Problem Solving", "Mathematical Skills", "Research Methodology"]
+  },
+  {
+    "id": 2,
+    "name": "B.Com Accounting",
+    "stream": "COMMERCE",
+    "duration": "3 years",
+    "description": "Comprehensive study of accounting, finance, and business",
+    "higherStudies": ["M.Com", "MBA", "CA", "CS", "CMA"],
+    "entranceTests": ["CAT", "University Entrance", "CA Foundation"],
+    "jobRoles": ["Accountant", "Financial Analyst", "Tax Consultant", "Auditor"],
+    "salaryRange": "₹3-12 LPA",
+    "employers": ["Banks", "MNCs", "Government", "CA Firms"],
+    "skills": ["Financial Analysis", "Accounting Software", "Tax Planning", "Business Communication"]
+  },
+  {
+    "id": 3,
+    "name": "B.A Psychology",
+    "stream": "ARTS",
+    "duration": "3 years",
+    "description": "Study of human behavior, mind, and mental processes",
+    "higherStudies": ["M.A Psychology", "M.Phil", "PhD", "MBA"],
+    "entranceTests": ["University Entrance", "UGC NET", "Psychology Entrance"],
+    "jobRoles": ["Counselor", "HR Executive", "Child Psychologist", "Social Worker"],
+    "salaryRange": "₹2-10 LPA",
+    "employers": ["Hospitals", "Schools", "NGOs", "Corporate HR"],
+    "skills": ["Counseling", "Research Skills", "Communication", "Empathy"]
+  },
+  {
+    "id": 4,
+    "name": "Diploma in Computer Engineering",
+    "stream": "VOCATIONAL",
+    "duration": "3 years",
+    "description": "Practical training in computer systems and programming",
+    "higherStudies": ["B.Tech Computer Science", "B.Sc IT", "Advanced Diplomas"],
+    "entranceTests": ["Polytechnic Entrance", "JEECUP", "State Entrance"],
+    "jobRoles": ["Software Developer", "System Administrator", "Web Developer", "IT Support"],
+    "salaryRange": "₹2-15 LPA",
+    "employers": ["IT Companies", "Startups", "Government", "Banks"],
+    "skills": ["Programming", "Database Management", "Web Development", "System Administration"]
+  },
+  {
+    "id": 5,
+    "name": "B.Sc Chemistry",
+    "stream": "SCIENCE",
+    "duration": "3 years",
+    "description": "Study of chemical composition, structure, and reactions",
+    "higherStudies": ["M.Sc Chemistry", "B.Tech Chemical Engineering", "PhD"],
+    "entranceTests": ["IIT JEE", "NEET", "University Entrance"],
+    "jobRoles": ["Research Chemist", "Quality Control Analyst", "Chemistry Teacher", "Lab Manager"],
+    "salaryRange": "₹3-10 LPA",
+    "employers": ["Pharmaceutical Companies", "Chemical Industries", "Research Labs", "Universities"],
+    "skills": ["Laboratory Techniques", "Analytical Skills", "Safety Protocols", "Research Methods"]
+  },
+  {
+    "id": 6,
+    "name": "BBA",
+    "stream": "COMMERCE",
+    "duration": "3 years",
+    "description": "Foundation in business administration and management",
+    "higherStudies": ["MBA", "PGDM", "M.Com", "Specialized Masters"],
+    "entranceTests": ["CAT", "MAT", "University Entrance"],
+    "jobRoles": ["Business Analyst", "Marketing Executive", "Operations Manager", "Sales Manager"],
+    "salaryRange": "₹3-15 LPA",
+    "employers": ["MNCs", "Startups", "Banks", "Consulting Firms"],
+    "skills": ["Leadership", "Strategic Thinking", "Communication", "Project Management"]
+  }
+]
