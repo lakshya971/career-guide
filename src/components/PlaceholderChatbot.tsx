@@ -1,35 +1,75 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
-import { MessageCircle, X, Send } from 'lucide-react';
+import { MessageCircle, X, Send, AlertCircle } from 'lucide-react';
+import { chatbotService, ChatMessage } from '../services/chatbotService';
 
 const PlaceholderChatbot = () => {
   const [isOpen, setIsOpen] = useState(false);
-  const [messages, setMessages] = useState([
-    { id: 1, text: "Hi! I'm your career advisor bot. How can I help you today?", sender: 'bot' }
-  ]);
+  const [messages, setMessages] = useState<ChatMessage[]>([]);
   const [inputText, setInputText] = useState('');
+  const [isLoading, setIsLoading] = useState(false);
+  const [isBackendHealthy, setIsBackendHealthy] = useState(false);
 
-  const handleSendMessage = () => {
-    if (!inputText.trim()) return;
+  useEffect(() => {
+    // Initialize with welcome message
+    const welcomeMessage: ChatMessage = {
+      id: 1,
+      text: "Hi! I'm your AI career advisor. I can help you with career guidance, stream selection, and scholarships. How can I assist you today?",
+      sender: 'bot',
+      timestamp: new Date()
+    };
+    setMessages([welcomeMessage]);
 
-    const newMessage = { id: Date.now(), text: inputText, sender: 'user' as const };
-    setMessages(prev => [...prev, newMessage]);
-    
-    // Simulate bot response
-    setTimeout(() => {
-      const botResponse = {
-        id: Date.now() + 1,
-        text: "Thanks for your message! This is a placeholder chatbot. In the full version, I'll provide personalized career guidance based on your quiz results and preferences.",
-        sender: 'bot' as const
-      };
-      setMessages(prev => [...prev, botResponse]);
-    }, 1000);
+    // Check backend health
+    checkBackendHealth();
+  }, []);
 
+  const checkBackendHealth = async () => {
+    const isHealthy = await chatbotService.checkHealth();
+    setIsBackendHealthy(isHealthy);
+  };
+
+  const handleSendMessage = async () => {
+    if (!inputText.trim() || isLoading) return;
+
+    const userMessage: ChatMessage = {
+      id: Date.now(),
+      text: inputText,
+      sender: 'user',
+      timestamp: new Date()
+    };
+
+    setMessages(prev => [...prev, userMessage]);
     setInputText('');
+    setIsLoading(true);
+
+    try {
+      const botResponse = await chatbotService.sendMessage(inputText);
+      
+      const botMessage: ChatMessage = {
+        id: Date.now() + 1,
+        text: botResponse,
+        sender: 'bot',
+        timestamp: new Date()
+      };
+
+      setMessages(prev => [...prev, botMessage]);
+    } catch (error) {
+      const errorMessage: ChatMessage = {
+        id: Date.now() + 1,
+        text: "Sorry, I'm having trouble processing your request. Please try again.",
+        sender: 'bot',
+        timestamp: new Date()
+      };
+      setMessages(prev => [...prev, errorMessage]);
+    } finally {
+      setIsLoading(false);
+    }
   };
 
   const handleKeyPress = (e: React.KeyboardEvent) => {
-    if (e.key === 'Enter') {
+    if (e.key === 'Enter' && !e.shiftKey) {
+      e.preventDefault();
       handleSendMessage();
     }
   };
