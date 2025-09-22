@@ -1,0 +1,91 @@
+{
+  "intents": [
+    {
+      "tag": "greeting",
+      "patterns": [
+        "Hi",
+        "Hello",
+        "Hey",
+        "How are you?",
+        "Is anyone there?"
+      ],
+      "responses": [
+        "Hello! How can I help you with your career and education today?",
+        "Hi there! I'm here to assist you. What do you need help with?",
+        "Hey! Welcome. Ask me about career paths, streams, or scholarships."
+      ]
+    },
+    {
+      "tag": "science_stream",
+      "patterns": [
+        "What is science stream?",
+        "Tell me about science after 10th",
+        "Careers in science",
+        "Science subjects",
+        "PCM/PCB careers"
+      ],
+      "responses": [
+        "The Science stream includes subjects like Physics, Chemistry, Mathematics (PCM) or Biology (PCB). It leads to careers in Engineering, Medicine, Research, and Technology.",
+        "Science stream prepares you for careers in fields like Engineering, Medicine, and Information Technology. Key subjects are Physics, Chemistry, and either Mathematics or Biology.",
+        "With the Science stream, you can pursue diverse careers such as a Doctor, Engineer, Scientist, or a Data Analyst."
+      ]
+    },
+    {
+      "tag": "commerce_stream",
+      "patterns": [
+        "What is commerce stream?",
+        "Tell me about commerce",
+        "Careers after commerce",
+        "Commerce subjects",
+        "B.Com, BBA careers"
+      ],
+      "responses": [
+        "The Commerce stream focuses on subjects like Accounts, Economics, and Business Studies. It leads to careers in Business, Finance, Chartered Accountancy, MBA, and UPSC.",
+        "Commerce stream opens up opportunities in finance and business. You can become a Chartered Accountant, Financial Analyst, or pursue an MBA.",
+        "Subjects like Accounting and Economics in the Commerce stream are essential for roles in banking, insurance, and corporate management."
+      ]
+    },
+    {
+      "tag": "arts_stream",
+      "patterns": [
+        "What is arts stream?",
+        "Tell me about arts stream",
+        "Careers in arts",
+        "Arts subjects"
+      ],
+      "responses": [
+        "The Arts stream includes subjects like History, Political Science, and Literature. It's great for careers in Law, Journalism, Civil Services (UPSC), and Creative fields.",
+        "Arts stream is versatile, preparing you for careers in fields like journalism, law, teaching, and government services.",
+        "If you have a creative or analytical mind, the Arts stream can lead you to a rewarding career as a writer, a lawyer, or a historian."
+      ]
+    },
+    {
+      "tag": "scholarships",
+      "patterns": [
+        "Scholarships for students",
+        "Financial aid for education",
+        "Government scholarships",
+        "How to get scholarships"
+      ],
+      "responses": [
+        "There are many government and private scholarships available, such as the National Scholarship Portal (NSP) and state-specific schemes. Please check official websites for eligibility.",
+        "You can find scholarships on the National Scholarship Portal (NSP) or by checking with your state's education department.",
+        "Financial aid is available. I recommend exploring the NSP portal or scholarships from private organizations."
+      ]
+    },
+    {
+      "tag": "career_guidance",
+      "patterns": [
+        "How to choose a career?",
+        "Which career is best for me?",
+        "Career guidance",
+        "Help me choose my future"
+      ],
+      "responses": [
+        "Choosing a career depends on your interests, skills, and values. Explore different fields, talk to professionals, and consider your strengths.",
+        "To pick a career, think about what you enjoy doing and what you're good at. Research various job roles and their requirements.",
+        "A good way to find a career is to explore options based on your favorite subjects and hobbies. Don't be afraid to try new things."
+      ]
+    }
+  ]
+}

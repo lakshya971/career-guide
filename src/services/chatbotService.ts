@@ -1,4 +1,5 @@
-const CHATBOT_API_URL = 'http://localhost:5000';
+// Use environment variable or fallback to localhost for development
+const CHATBOT_API_URL = process.env.REACT_APP_CHATBOT_API_URL || 'http://localhost:5000';
 
 export interface ChatMessage {
   id: number;
